@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity">
+
+    <!-- Dibawah ini merupakan panah yang menerapkan
+     Intent untuk menuju kembali ke Main Activity" -->
+
+    <ImageView
+        android:id="@+id/backToMain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_arrow_back_24"/>
+
+    <!-- Dibawah ini merupakan contoh Text dan
+    Button yang menerapkan Styling" -->
+
+    <TextView
+        style="@style/AppTextStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World" />
+
+    <TextView
+        style="@style/AppTextStyleMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World" />
+
+    <TextView
+        style="@style/AppTextStyleRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World" />
+
+    <Button
+        style="@style/AppButtonLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hello World" />
+
+    <Button
+        style="@style/AppButtonRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"/>
+
+    <Button
+        style="@style/AppButtonSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"/>
+
+</LinearLayout>

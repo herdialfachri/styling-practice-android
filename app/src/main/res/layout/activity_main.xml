@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Silahkan custom view ini -->
+    <!-- Agar berjalan dengan baik project ini
+     lebih optimal dijalankan di emulator Pixel 9 -->
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toNewActivity"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            style="@style/AppTextStyleBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tupai"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            style="@style/AppImageStyle"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/bajing" />
+
+        <TextView
+            style="@style/AppTextStyleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Tupai adalah hewan yang sering memakan buah, sering bersarang dan hidup di pohon" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/toNewActivity"
+        style="@style/AppButtonRegular"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Klik Disini"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
